@@ -1,4 +1,4 @@
-FROM __BASE_IMAGE__:18.04
+FROM ubuntu:18.04
 MAINTAINER Lantern Team <admin@getlantern.org>
 
 RUN apt-get update && apt-get install -y build-essential curl git apt-utils unzip file pkg-config lsof libpcap-dev libappindicator3-dev libwebkit2gtk-4.0-dev
