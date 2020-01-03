@@ -3,11 +3,6 @@ MAINTAINER Lantern Team <admin@getlantern.org>
 
 RUN apt-get update && apt-get install -y build-essential curl git apt-utils unzip file pkg-config lsof libpcap-dev libappindicator3-dev libwebkit2gtk-4.0-dev
 
-ENV GO_VERSION 1.13.5
-
-RUN curl -sSL https://storage.googleapis.com/golang/go$GO_VERSION.linux-__GOARCH__.tar.gz | tar -xvzf - -C /usr/local
-RUN mkdir -p /usr/local/gocode/bin
-
 # Environment variables
 ENV GOPATH /usr/local/gocode/
 ENV PATH $PATH:/usr/local/go/bin
